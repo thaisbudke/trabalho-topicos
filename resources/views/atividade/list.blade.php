@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <h1>Lista de Atividades</h1>
 <hr>
 @foreach($atividades as $a)
@@ -30,6 +33,8 @@
     </div>
 	<hr>
 @endif
+
+@endsection
 
 
 <!-- \Carbon\Carbon::parse($a->scheduledto)->format('d/m/Y h:m')  -->
